@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+
 
 const pages = ['Carrito'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,7 +36,8 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+ 
+    <AppBar position="static" sx={{ mb: 2 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -52,6 +53,9 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+           
+
+
             }}
           >
             SIMULADOR DE TIENDA EN LÍNEA
@@ -134,6 +138,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+ 
   );
 }
 export default ResponsiveAppBar;
