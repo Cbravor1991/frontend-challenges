@@ -11,7 +11,7 @@ const ProductList = () => {
     //seteo las variables necesarias para filtrar los productos.
     const [filteredProducts, setFilteredProducts] = useState([]);
     //voy a filtar por categoria preparo la variable
-    const [categoryFilter, setCategoryFilter] = useState('');
+    const [categoryFilter, setCategoryFilter] = useState("seleccionar");
     //
     const [sortOption, setSortOption] = useState(''); 
 

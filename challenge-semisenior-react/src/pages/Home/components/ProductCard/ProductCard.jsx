@@ -9,6 +9,13 @@ import CardActions from '@mui/material/CardActions';
 
 
 export default function ProductCard({ product }) {
+
+  const handleClick = (product) => {
+    console.log(product);
+
+  }
+
+
   return (
     <Card sx={{ width: 345, height: 400, display: 'flex', flexDirection: 'column' }}>
       <CardActionArea>
@@ -41,7 +48,7 @@ export default function ProductCard({ product }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={()=> handleClick(product)}>
           Agregar al carrito
         </Button>
       </CardActions>
